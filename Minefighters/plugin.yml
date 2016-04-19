@@ -1,0 +1,8 @@
+name: CLog
+main: com.cytexal.log.Log
+version: 1.0
+description: CytexalLog
+
+commands:
+      clog:
+        usage: Toggle Logshowing
