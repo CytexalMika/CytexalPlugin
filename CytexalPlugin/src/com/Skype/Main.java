@@ -8,6 +8,8 @@ public class Main extends JavaPlugin{
 	@Override
 	public void onEnable() {
 		
+		new MoveEvent(this);
+		
 	}
 	@Override
 	public void onDisable() {
