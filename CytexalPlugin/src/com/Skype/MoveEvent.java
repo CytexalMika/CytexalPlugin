@@ -6,7 +6,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class MoveEvent extends JavaPlugin implements Listener{
+public class MoveEvent implements Listener{
 
 	private Main plugin;
 

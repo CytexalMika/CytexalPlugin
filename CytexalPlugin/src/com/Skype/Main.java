@@ -9,8 +9,8 @@ public class Main extends JavaPlugin implements Listener{
 	
 	@Override
 	public void onEnable() {
-		new MoveEvent(this);
 		this.getServer().getPluginManager().registerEvents(this, this);
+		new MoveEvent(this);
 	}
 	@Override
 	public void onDisable() {
