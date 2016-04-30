@@ -1,0 +1,6 @@
+name: Skype
+main: com.Skype.Main
+version: 1.0
+description: Zeigt die Skypedaten
+
+commands:
