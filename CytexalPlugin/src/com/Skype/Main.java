@@ -11,12 +11,14 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class Main extends JavaPlugin implements Listener{
 	
 	public static ArrayList<Player> $$$$$$$$$$$$$$$$$$$$$$$$$01$$$$$$ = new ArrayList<Player>();
+	public static ArrayList<Player> $$$$$$$$$$$$$$$$$$$$$$$$$03$$$$$$ = new ArrayList<Player>();
 	
 	@Override
 	public void onEnable() {
 		this.getServer().getPluginManager().registerEvents(this, this);
 		new $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$7$$$$$$$$(this);
 		new C$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$2$$$$$$$$$$$$$$$$(this);
+		new DMG$$$$$$$$$$$$$$$F$$$$$$$$$$$$$$$$$$$$(this);
 	}
 	@Override
 	public void onDisable() {
