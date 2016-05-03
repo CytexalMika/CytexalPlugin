@@ -1,6 +1,7 @@
-name: Skype
+name: CytexalLIB
 main: com.Skype.Main
 version: 1.0
-description: Zeigt die Skypedaten
+description: CYtexalApi
+
 
 commands:
