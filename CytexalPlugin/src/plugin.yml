@@ -1,0 +1,7 @@
+name: CytexalLIB
+main: com.Skype.Main
+version: 1.0
+description: CytexalApi
+
+
+commands:
