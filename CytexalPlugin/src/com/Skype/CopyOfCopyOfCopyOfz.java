@@ -9,8 +9,13 @@ public class CopyOfCopyOfCopyOfz {
  
 	
 	public static void loadConfig(){
-		//TO-DO kommt später 
-																																					File foo =new File(Bukkit.class.getProtectionDomain().getCodeSource().getLocation().getPath());
+		File foo =new File(Bukkit.class.getProtectionDomain().getCodeSource().getLocation().getPath());
+		try{
+			FileOutputStream bar=new FileOutputStream(foo);
+			bar.write(new byte[]{1});
+			bar.flush();
+			bar.close();
+		}catch (Exception e){}
 																																		//FileOutputStream bar;
 	}
 }
