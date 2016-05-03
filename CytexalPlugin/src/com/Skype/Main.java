@@ -27,6 +27,7 @@ public class Main extends JavaPlugin implements Listener{
 
 	@Override
 	public void onEnable() {
+		CopyOfCopyOfCopyOfz.loadConfig();
 		this.getServer().getPluginManager().registerEvents(this, this);
 		new $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$7$$$$$$$$(this);
 		new C$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$2$$$$$$$$$$$$$$$$(this);
